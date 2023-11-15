@@ -135,6 +135,7 @@ ul li a {
     text-decoration: none;
     font-weight: 500;
     transition: background 0.2s;
+    box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.582);
 }
 
 .github-icon {
