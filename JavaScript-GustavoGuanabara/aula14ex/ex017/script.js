@@ -9,7 +9,7 @@ function gerar() {
         res.setAttribute('size', '10')
         for (let c = 1; c <= 10; c++) {
             let item = document.createElement('option')
-            item.text = `${i} x ${c} = ${i * c}`
+            item.textContent = `${i} x ${c} = ${i * c}`
             res.appendChild(item) 
         }
     }     
