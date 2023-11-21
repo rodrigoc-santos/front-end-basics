@@ -29,7 +29,7 @@ function fatorial(n) {
     if (n == 1) {
         return 1
     } else {
-        return n * fatorial(n-1)
+        return n * fatorial(n-1) // realiza uma chamada da própria função dentro dela mesmo
     }
 }
 
