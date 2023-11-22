@@ -4,6 +4,7 @@ var res = document.getElementById('res')
 let vetor = []
 
 function isNumber(n) {
+    //Verifica se o número do input está dentro das condições delimitadas
     if (Number(n) >= 1 && Number(n) <= 100) {
         return true
     } else {
@@ -12,6 +13,7 @@ function isNumber(n) {
 }
 
 function inList (n, v) {
+    // Verifica se o número já foi inserido na lista/Array
     if (v.indexOf(Number(n)) != -1) {
         return true
     } else {
@@ -32,6 +34,7 @@ function adicionar() {
     } else {
         alert('Valor inválido ou já encontrado na lista.')
     }
+    // zera o campo de digitação do formulário e deixa o foco do ponteiro lá pronto para uma nova entrada
     num.value = ''
     num.focus()
 }
@@ -41,6 +44,7 @@ function finalizar() {
     if (vetor.length == 0) {
         alert('Adicione valores antes de finalizar!')
     } else {
+        // Irá trabalhar os dados e dá as informações de total de números, o maior, o menor, a soma deles e a média.
         let menor = vetor[0]
         let maior = vetor[0]
         let soma = 0
