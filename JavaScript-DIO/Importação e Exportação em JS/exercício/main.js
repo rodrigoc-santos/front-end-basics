@@ -12,10 +12,8 @@ let maiorValor = 0
 
 for (let i = 0  ; i < 5; i++) {
     const numeroSorteado = gets()
-    numerosSorteados.push(numeroSorteado)
-    const numeroDaVez = numerosSorteados[i]
-    if (numeroDaVez > maiorValor) {
-        maiorValor = numeroDaVez
+    if (numeroSorteado > maiorValor) {
+        maiorValor = numeroSorteado
     }
 }
 
