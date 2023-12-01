@@ -5,12 +5,11 @@ Dados de entrada: 5, 50, 10, 98,23
 
 Saída: 98*/
 
-const {gets, print} = require('./funcoes_auxiliares1')
+const {gets, print, numerosSorteados} = require('./funcoes_auxiliares1')
 
-const numerosSorteados = []
 let maiorValor = 0
 
-for (let i = 0  ; i < 5; i++) {
+for (let i = 0  ; i < numerosSorteados.length; i++) {
     const numeroSorteado = gets()
     if (numeroSorteado > maiorValor) {
         maiorValor = numeroSorteado

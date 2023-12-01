@@ -1,4 +1,4 @@
-const numerosSorteados = [5, 50, 10, 98, 23]
+const numerosSorteados = [5, 50, 100, 55, 10, 98, 23]
 let i = 0
 
 function gets() {
@@ -11,4 +11,4 @@ function print(texto) {
     console.log(texto)
 }
 
-module.exports = {gets, print}
+module.exports = {gets, print, numerosSorteados}
